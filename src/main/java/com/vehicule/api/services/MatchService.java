@@ -18,7 +18,7 @@ public class MatchService {
 
     public Match saveMatch(Team team1,Team team2,String date){
         Match match = new Match();
-        match.setDate(new Date(date));
+        match.setDate(date);
         match.setTeam1(team1);
         match.setTeam2(team2);
         match = matchRepository.save(match);
