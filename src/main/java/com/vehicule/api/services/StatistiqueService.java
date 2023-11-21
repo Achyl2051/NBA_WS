@@ -32,4 +32,7 @@ public class StatistiqueService {
     public List<Object[]> getStatistiquesJoueurs() {
         return statistiqueRepository.getStatistiquesJoueurs();
     }
+    public List<Object[]> getStatistiquesEquipes(String id) {
+        return statistiqueRepository.getStatistiquesEquipes(id);
+    }
 }
