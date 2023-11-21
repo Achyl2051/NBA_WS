@@ -22,6 +22,6 @@ public class MatchService {
         match.setTeam1(team1);
         match.setTeam2(team2);
         match = matchRepository.save(match);
-        return match;
+        return match;   
     }
 }

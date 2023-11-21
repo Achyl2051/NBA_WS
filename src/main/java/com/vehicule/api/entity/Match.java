@@ -7,7 +7,6 @@ public class Match {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    @Column(nullable = false)
     private String date;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="id_team1",referencedColumnName="id")
@@ -28,7 +27,7 @@ public class Match {
         return date;
     }
 
-    public void setDate(String nom) {
+    public void setDate(String date) {
         this.date = date;
     }
 
