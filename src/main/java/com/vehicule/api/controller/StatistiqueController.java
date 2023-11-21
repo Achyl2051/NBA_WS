@@ -48,8 +48,8 @@ public class StatistiqueController {
     public List<Object[]> getStatistiquesJoueurs() {
         return statistiqueService.getStatistiquesJoueurs();
     }
-    @GetMapping("/statbyequipes")
-    public List<Object[]> getStatistiquesEquipes(String id) {
+    @GetMapping("/statbyequipes/{id}")
+    public List<Object[]> getStatistiquesEquipes(@PathVariable String id) {
         return statistiqueService.getStatistiquesEquipes(id);
     }
 
